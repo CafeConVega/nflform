@@ -11,3 +11,10 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+//class teamcontroller extends BaseController {
+//    
+//    public function showTeams () {
+//        return View::make('nflteams');
+//    }
+//}

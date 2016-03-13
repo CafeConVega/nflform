@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Route::get('nflteams', 'teamcontroller@showTeams');
+
+Route::get('nflteams', 'teamcontroller@showTeams')->name('nflteams');
+Route::post('nflteams', 'teamcontroller@showTeams')->name('new_nflteam');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -29,3 +34,8 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+Route::get('nflteams', function () {
+    return 'Testing';
+});
+
